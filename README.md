@@ -7,12 +7,12 @@ Getting Started:
 
 In deployment the app to GCP, here is the step by step:
 
-1. Prequerities:
+**1. Prequerities:**
    - NodeJS
    - NPM
    - Cloud Run
 
-3. How to Run It:
+**2. How to Run It:**
    
    - Pull the project on our [Github Repo](https://github.com/LetSea-Nautical/cloud-api)
    - Open Google Cloud Platform, then run the command inside the repo directory using console to install all the node modules in package.json  
