@@ -1,9 +1,9 @@
 const mysql = require("mysql");
 
 const db = mysql.createConnection({
-  host: "34.101.75.217",
+  host: "localhost",
   user: "root",
-  password: "ABC12345",
+  password: "",
   database: "letsea-db",
 });
 
