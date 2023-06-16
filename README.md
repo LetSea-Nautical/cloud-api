@@ -45,7 +45,8 @@ We have 2 main routes that can be used, those are:
 <details>
 <summary>Login</summary>
 <br>
-
+REQUEST
+   
 ```
 POST http://URL/login
 Content-Type: application/json
@@ -54,12 +55,62 @@ Content-Type: application/json
     "password": "1231234"
 }
 ```
+RESULT
+
+```
+{
+    "message": "Login succeed",
+    "success": true,
+    "data": [
+        {
+            "id_company": 1,
+            "username": "ariqz",
+            "password": "1231234",
+            "email": "ariq@gmail.com",
+            "company_name": "pelni",
+            "created_at": "2023-06-15T00:58:16.166Z"
+        }
+    ],
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODY4MjE2NjF9.1WQkxNF300mnxIm31yA4LzLq8Gb9EU8ow6Z3Umn9FAM"
+}
+```
 </details>
 
 <details>
 <summary>Edit Password</summary>
 <br>
-This is how you dropdown.
+REQUEST
+
+```
+PUT http://URL/editpassword
+Content-Type: application/json
+{
+    "username" : "ariqz",
+    "password" : "123anjay",
+    "confirm_password" : "123anjay"
+}
+```
+
+RESULT
+
+```
+{
+    "payload": {
+        "messages": "Succeed",
+        "status_Code": 200,
+        "datas": {
+            "fieldCount": 0,
+            "affectedRows": 1,
+            "insertId": 0,
+            "serverStatus": 2,
+            "warningCount": 0,
+            "message": "(Rows matched: 1  Changed: 1  Warnings: 0",
+            "protocol41": true,
+            "changedRows": 1
+        }
+    }
+}
+```
 </details>
 
 <details>
