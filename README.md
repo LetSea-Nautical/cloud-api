@@ -174,19 +174,136 @@ RESULT
 <details>
 <summary>Vessel Detail</summary>
 <br>
-This is how you dropdown.
+REQUEST
+
+```
+GET http://URL/shipment/ship/:id
+```
+RESULT
+
+```
+{
+    "payload": {
+        "messages": "Data of certain ship",
+        "status_Code": 200,
+        "datas": [
+            {
+                "mmsi": 24781,
+                "imo": 2749875,
+                "ship_name": "Kapal Kalimutu",
+                "builder": "Budi Cahyadi",
+                "place_build": "Riau",
+                "year_build": 1998
+            },
+            {
+                "mmsi": 209087000,
+                "imo": 24722,
+                "ship_name": "Kapal KEGIH",
+                "builder": "Yamato",
+                "place_build": "Serang",
+                "year_build": 1985
+            }
+        ]
+    }
+}
+```
 </details>
 
 <details>
 <summary>Register Ship (Regship)</summary>
 <br>
-This is how you dropdown.
+REQUEST
+
+```
+POST http://URL/regship
+{
+    "mmsi": "34807623",
+    "id_company": "1",
+    "imo" : "624876",
+    "ship_name": "Yacth Kaligede",
+    "builder": "Sutejo",
+    "place_build": "Antartica",
+    "year_build": "1885"
+}
+```
+RESULT
+
+```
+{
+    "payload": {
+        "messages": "Register ship success",
+        "status_Code": 200,
+        "datas": {
+            "fieldCount": 0,
+            "affectedRows": 1,
+            "insertId": 1,
+            "serverStatus": 2,
+            "warningCount": 0,
+            "message": "",
+            "protocol41": true,
+            "changedRows": 0
+        }
+    }
+}
+```
 </details>
 
 <details>
 <summary>Show All - Home</summary>
 <br>
-This is how you dropdown.
+REQUEST
+
+```
+GET http://URL/shipment/
+```
+RESULT
+
+```
+{
+    "payload": {
+        "messages": "data berhasil diambil",
+        "status_Code": 200,
+        "datas": [
+            {
+                "mmsi": 24781,
+                "id_company": 1,
+                "imo": 2749875,
+                "ship_name": "Kapal Kalimutu",
+                "builder": "Budi Cahyadi",
+                "place_build": "Riau",
+                "year_build": 1998
+            },
+            {
+                "mmsi": 12985796,
+                "id_company": 5,
+                "imo": 347962,
+                "ship_name": "Kapal Tanah",
+                "builder": "Yoasobi",
+                "place_build": "Bogor",
+                "year_build": 2014
+            },
+            {
+                "mmsi": 209087000,
+                "id_company": 1,
+                "imo": 24722,
+                "ship_name": "Kapal KEGIH",
+                "builder": "Yamato",
+                "place_build": "Serang",
+                "year_build": 1985
+            },
+            {
+                "mmsi": 876235235,
+                "id_company": 5,
+                "imo": 1232466,
+                "ship_name": "Kapal Air",
+                "builder": "Zutomayo",
+                "place_build": "Osaka",
+                "year_build": 2014
+            }
+        ]
+    }
+}
+```
 </details>
 
 
