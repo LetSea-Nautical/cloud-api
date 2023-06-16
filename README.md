@@ -42,6 +42,55 @@ We have 2 main routes that can be used, those are:
 1. Auth
 2. Shipment
 
+<details>
+<summary>Login</summary>
+<br>
+
+```
+POST http://URL/login
+Content-Type: application/json
+{
+    "username": "ariqz",
+    "password": "1231234"
+}
+```
+</details>
+
+<details>
+<summary>Edit Password</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details>
+<summary>Logout</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details>
+<summary>Tracking Detail</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details>
+<summary>Vessel Detail</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details>
+<summary>Register Ship (Regship)</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details>
+<summary>Show All - Home</summary>
+<br>
+This is how you dropdown.
+</details>
 
 
 
