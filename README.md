@@ -116,13 +116,59 @@ RESULT
 <details>
 <summary>Logout</summary>
 <br>
-This is how you dropdown.
+REQUEST
+
+```
+DELETE http://URL/logout
+Content-Type: application/json
+HEADERS :
+TOKEN
+```
+RESULT
+
+```
+{
+    "payload": {
+        "messages": "Logout Succeed!",
+        "status_Code": 200,
+        "datas": null
+    }
+}
+```
 </details>
 
 <details>
 <summary>Tracking Detail</summary>
 <br>
-This is how you dropdown.
+REQUEST
+
+```
+GET http://URL/shipment/trackdetail/:id
+```   
+RESULT
+   
+```
+{
+    "payload": {
+        "messages": "Shipment Tracking",
+        "status_Code": 200,
+        "datas": [
+            {
+                "id_tracking": 1,
+                "ship_name": "Kapal KEGIH",
+                "mmsi": 209087000,
+                "arrival_datetime": "2022-03-30 00:00:05",
+                "lat": 39.84931,
+                "lon": -75.30936,
+                "sog": 12.7,
+                "cog": 91.6,
+                "arr_lat": 38.43993,
+                "arr_lon": -74.71892
+            }
+        ]
+    }
+}
+```
 </details>
 
 <details>
